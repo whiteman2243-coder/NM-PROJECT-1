@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSE Student Portfolio - Joshua</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: white;
+      background-color: #0f172a;
+    }
+
+    header {
+      background-color: #1e293b;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 22px;
+      color: #fbbf24;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      margin-left: 25px;
+      color: #38bdf8;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #facc15;
+    }
+
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 40px;
+      border-radius: 12px;
+      width: 80%;
+      max-width: 1000px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .content-block {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .content-text {
+      flex: 1;
+      text-align: left;
+      max-width: 500px;
+    }
+
+    .content-text h2 {
+      color: #E6B609;
+      margin-bottom: 10px;
+    }
+
+    .content-text p {
+      color: #e2e8f0;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .content-image {
+      flex: 1;
+    }
+
+    .content-image img {
+      max-width: 300px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    img.profile {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      object-fit: cover;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    footer {
+      background-color: #1e293b;
+      color: #94a3b8;
+      text-align: center;
+      padding: 15px 10px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .content-block {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .content-text {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <h1 style="font-family: cursive; font-style:italic">Joshuva Riyan</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+<a href="#contact">Contact </a>
+</header>
+
+<!-- Home Section -->
+<div class="section" id="home" style="background-image: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1470&q=80');">
+  <div class="overlay">
+    <div class="content-block">
+      <div class="content-text">
+        <h2>Welcome to My Portfolio</h2>
+        <p>Explore my academic and project journey as a passionate Computer Science Engineering student focused on practical innovation and technical growth.</p>
+      </div>
+      <div class="content-image">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1470&q=80" alt="Professional Welcome">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- About Section -->
+<div class="section" id="about" style="background-image: url('https://images.unsplash.com/photo-1510936111840-65e151ad71bb?auto=format&fit=crop&w=1470&q=80');">
+  <div class="overlay">
+    <img class="profile" src="https://ik.imagekit.io/JoshuvaRiyan/WhatsApp%20Image%202025-10-06%20at%202.09.29%20PM.jpeg?updatedAt=1759741117097" alt="Profile Photo">
+    <div class="content-block">
+      <div class="content-text">
+        <h2>About Me</h2>
+        <p><strong>Name:</strong> Joshua</p>
+        <p><strong>Course:</strong> B.E. Computer Science and Engineering, 3rd Year</p>
+        <p><strong>College:</strong> St. Mother Theresa Engineering College, Vagaikualam</p>
+        <p><strong>Interests:</strong> Web Development, Python, Data Science, IoT (Arduino), and Competitive Programming</p>
+      </div>
+      <div class="content-image">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" alt="About Me Image">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Projects Section -->
+<div class="section" id="projects" style="background-image: url('https://images.unsplash.com/photo-1542831371-29b0f74f9713');">
+  <div class="overlay">
+    <div class="content-block">
+      <div class="content-text">
+        <h2>Garage Door Opener</h2>
+        <p>IoT-based Arduino project using relay modules and sensors. Built and tested using Wokwi simulator, this project automates door access using real-time logic.</p>
+      </div>
+      <div class="content-image">
+        <img src="https://images.unsplash.com/photo-1591696205602-2f950c417cb9" alt="Garage Door Project">
+      </div>
+    </div>
+    <br><br>
+    <div class="content-block">
+      <div class="content-text">
+        <h2>Student Info Web App</h2>
+        <p>A responsive HTML & CSS-based form that collects and stores student data. Built for academic purposes and includes tables, validation, and styling.</p>
+      </div>
+      <div class="content-image">
+        <img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=1470&q=80" alt="Student Info App">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Contact Me Section with Background Image -->
+<section id="contact" style="
+  background-image: url('https://images.unsplash.com/photo-1542744173-05336fcc7ad4?auto=format&fit=crop&w=1470&q=80');
+  background-size: cover;
+  background-position: center;
+  padding: 60px 20px;
+  color: white;
+  font-family: Arial, sans-serif;
+">
+  <div style="
+    background-color: rgba(0, 0, 0, 0.6);
+    max-width: 700px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  ">
+    <h2 style="text-align: center; font-size: 2.2em; margin-bottom: 25px;color:#E67B09;">Contact Me</h2>
+    
+    <p style="font-size: 1.2em; margin: 10px 0;"><strong>👤 Name:</strong>joshua</p>
+    <p style="font-size: 1.2em; margin: 10px 0;"><strong>📞 Phone:</strong> +91 8489354110</p>
+    <p style="font-size: 1.2em; margin: 10px 0;"><strong>💻 Profession:</strong> B.E. CSE Student (3rd Year)</p>
+    <p style="font-size: 1.2em; margin: 10px 0;"><strong>🏠 Address:</strong> St. Mother Theresa Engineering College, Vagaikulam, Thoothukudi.</p>
+    <p style="font-size: 1.2em; margin: 10px 0;"><strong>📍 Location:</strong> Vagaikulam, Thoothukudi, Tamil Nadu</p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 Joshua | CSE Portfolio | Joshua Pvt Ltd, Thoothukudi.</p>
+</footer>
+
+</body>
+</html>
